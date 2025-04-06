@@ -33,10 +33,10 @@ This project demonstrates an end-to-end **ETL pipeline** to collect, process, st
 
 ## 📌 Features
 
-- ✅ **Automated ETL** with Airflow (download, extract, consolidate, and transform)
-- ✅ **Real-time ingestion** via Kafka Producer & Consumer
-- ✅ **MySQL integration** for persistent storage
-- ✅ **Interactive Power BI dashboard** with filters:
+- **Automated ETL** with Airflow (download, extract, consolidate, and transform)
+- **Real-time ingestion** via Kafka Producer & Consumer
+- **MySQL integration** for persistent storage
+- **Interactive Power BI dashboard** with filters:
   - Traffic by vehicle type
   - Transactions by toll plaza
   - Payment method breakdown
@@ -87,7 +87,7 @@ This project demonstrates an end-to-end **ETL pipeline** to collect, process, st
 
 ## ⚙️ Setup Instructions
 
-### ✅ Prerequisites
+### Prerequisites
 - Python 3.8+
 - Docker or local setup for:
   - Kafka (port: `9092`)
@@ -95,7 +95,7 @@ This project demonstrates an end-to-end **ETL pipeline** to collect, process, st
   - Apache Airflow
 - Power BI Desktop
 
-### 🔧 Installation
+### Installation
 
 1. **Clone the Repository**
 ```bash
