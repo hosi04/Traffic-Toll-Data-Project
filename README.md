@@ -2,7 +2,7 @@
 
 A real-time traffic toll data pipeline and dashboard using Kafka, MySQL, and Power BI to analyze vehicle traffic and payment methods at toll stations.
 
-![Dashboard Screenshot](docs/dashboard_screenshot.png)
+![Dashboard Screenshot](docs/dashboard.png)
 
 ## Overview
 This project builds a data pipeline to process traffic toll data in real-time:
