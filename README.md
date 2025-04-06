@@ -48,19 +48,20 @@ This project demonstrates an end-to-end **ETL pipeline** to collect, process, st
 
 ```
 .
-├── dags/
-│   └── python_etl/
-│       ├── etl_pipeline.py   # Airflow DAG file
-│       └── staging/          # Intermediate storage
-├── kafka/
+├── data/
+│   ├── tolldata.tgz          # aggregate data
+│   └── transformed_data.csv  # Processed data
+├── scripts/
 │   ├── producer.py           # Kafka producer for transformed CSV
 │   └── consumer.py           # Kafka consumer to insert into MySQL
-├── mysql/
-│   └── schema.sql            # Table schema for MySQL
+│   └── etl_toll_data.py      # Airflow DAG file
+├── sql/
+│   └── create_tables.sql     # Table schema for MySQL
 ├── powerbi/
 │   └── dashboard.pbix        # Power BI dashboard file
-├── requirements.txt
-└── README.md
+|   └── dashboard.png         # Dashboard image
+├── requirements.txt          # Required libraries
+└── README.md  
 ```
 
 ---
@@ -98,8 +99,8 @@ This project demonstrates an end-to-end **ETL pipeline** to collect, process, st
 
 1. **Clone the Repository**
 ```bash
-git clone https://github.com/your-username/toll-data-dashboard.git
-cd toll-data-dashboard
+git clone https://github.com/hosi04/Traffic-Toll-Data-Project.git
+cd Traffic-Toll-Data-Project
 ```
 
 2. **Install Python Dependencies**
@@ -125,25 +126,3 @@ python kafka/consumer.py
 6. **Configure Power BI**
 - Open `powerbi/dashboard.pbix`
 - Set up connection to MySQL to load and refresh data.
-
----
-
-## 🧠 Notes
-
-- Airflow DAG runs daily to simulate new data ingestion.
-- Kafka allows near real-time updates to the dashboard via streaming.
-- The pipeline is modular and scalable — you can connect other data sources or outputs as needed.
-
----
-
-## 👨‍💻 Author
-
-**Duy Hosinguyen**  
-Email: hosinguyenn@gmail.com  
-GitHub: [your-github-profile](https://github.com/your-github-profile)
-
----
-
-## 📃 License
-
-MIT License. See `LICENSE` file for more details.
